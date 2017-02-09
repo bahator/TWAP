@@ -1,0 +1,12 @@
+version: '2'
+services:
+  mosca:
+    image: matteocollina/mosca
+    ports:
+      - "8080:80"
+      - "1883:1883"
+
+  random-sensors:
+    build: .
+    depends_on:
+      - mosca
