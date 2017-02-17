@@ -11,4 +11,4 @@ RUN npm install
 # Bundle app source
 COPY . /usr/src/app
 
-CMD [ "node", "test-random-sensors.js" ]
+CMD [ "node", "brokerServ.js" ]
